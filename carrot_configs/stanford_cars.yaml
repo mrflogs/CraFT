@@ -1,0 +1,25 @@
+# ------ root_path/dataset_name ------
+root_path: 'datasets'
+
+# ------ Basic Config ------
+dataset: 'stanford_cars'
+shots: 16
+backbone: 'RN50'
+
+n_prompt_tokens: 4
+intrinsic_dim: 512
+budget: 8000
+bound: 5
+sigma: 1
+alpha: 1
+popsize: 40
+parallel: False
+print_every: 50
+eval_every: 100
+n: 4
+batch_size: 256
+std: 0.2
+
+lr: 0.001
+weight: 0.1
+train_epoch: 200
