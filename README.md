@@ -31,8 +31,8 @@
 ### Installation
 Create a conda environment and install dependencies:
 ```
-conda create -n carrot python=3.9
-conda activate carrot
+conda create -n craft python=3.9
+conda activate craft
 
 pip install -r requirements.txt
 
@@ -45,16 +45,16 @@ Follow [DATASET.md](DATASET.md) to install ImageNet and other 10 datasets referr
 
 ## Get Started
 ### Configs
-The running configurations can be modified in `carrot_configs/dataset.yaml`, including shot numbers, visual encoders, and hyperparamters. 
+The running configurations can be modified in `craft_configs/dataset.yaml`, including shot numbers, visual encoders, and hyperparamters. 
 
 ### Running
 For ImageNet dataset:
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main_carrot_imagenet.py --config carrot_configs/imagenet.yaml
+CUDA_VISIBLE_DEVICES=0 python main_craft_imagenet.py --config craft_configs/imagenet.yaml
 ```
 For other 10 datasets:
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main_carrot.py --config carrot_configs/dataset.yaml
+CUDA_VISIBLE_DEVICES=0 python main_craft.py --config craft_configs/dataset.yaml
 ```
 
 ## Acknowledgement

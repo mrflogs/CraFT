@@ -1,0 +1,25 @@
+# ------ root_path/dataset_name ------
+root_path: 'datasets'
+
+# ------ Basic Config ------
+dataset: 'imagenet'
+shots: 16
+backbone: 'RN50'
+
+n_prompt_tokens: 4
+intrinsic_dim: 512
+budget: 8000
+bound: 0
+sigma: 1
+alpha: 1
+popsize: 40
+parallel: False
+print_every: 50
+eval_every: 100
+n: 1
+batch_size: 256
+std: 1
+
+lr: 0.001
+weight: 0.
+train_epoch: 200
